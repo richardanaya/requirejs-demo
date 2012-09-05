@@ -8,6 +8,7 @@ requirejs(
     [
         'vows',
         "vows/lib/vows/reporters/spec",
+        'lib/logger_console',
         'lib/shared_tests'
     ],
     function (vows, spec) {
