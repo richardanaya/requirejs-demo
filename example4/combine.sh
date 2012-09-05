@@ -1,1 +1,1 @@
-node r.js -o name=main_web out=output.js baseUrl=.
+node r.js -o name=main_web out=output.js optimize=none baseUrl=.
