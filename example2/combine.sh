@@ -1,0 +1,1 @@
+node r.js -o name=lib/foo out=output.js baseUrl=.
