@@ -1,1 +1,1 @@
-node r.js -o name=lib/foo out=www/output.js baseUrl=.
+node r.js -o name=lib/foo out=output.js baseUrl=.
