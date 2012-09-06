@@ -1,0 +1,46 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'readline' ]
+2 info using npm@1.1.59
+3 info using node@v0.8.8
+4 verbose read json c:\Users\Richard\source\requirejs-demo\example5\package.json
+5 verbose read json c:\Users\Richard\source\requirejs-demo\example5\node_modules\vows\package.json
+6 verbose read json c:\Users\Richard\source\requirejs-demo\example5\package.json
+7 verbose cache add [ 'readline', null ]
+8 silly cache add name=undefined spec="readline" args=["readline",null]
+9 verbose parsed url { pathname: 'readline', path: 'readline', href: 'readline' }
+10 silly lockFile 2d9e02a8-readline readline
+11 verbose lock readline C:\Users\Richard\AppData\Roaming\npm-cache\2d9e02a8-readline.lock
+12 silly lockFile 2d9e02a8-readline readline
+13 verbose addNamed [ 'readline', '' ]
+14 verbose addNamed [ null, '' ]
+15 silly lockFile c1dd5758-readline readline@
+16 verbose lock readline@ C:\Users\Richard\AppData\Roaming\npm-cache\c1dd5758-readline.lock
+17 silly addNameRange { name: 'readline', range: '', hasData: false }
+18 verbose url raw readline
+19 verbose url resolving [ 'https://registry.npmjs.org/', './readline' ]
+20 verbose url resolved https://registry.npmjs.org/readline
+21 info retry registry request attempt 1 at 14:01:45
+22 http GET https://registry.npmjs.org/readline
+23 http 404 https://registry.npmjs.org/readline
+24 silly registry.get cb [ 404,
+24 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+24 silly registry.get     date: 'Thu, 06 Sep 2012 19:01:46 GMT',
+24 silly registry.get     'content-type': 'application/json',
+24 silly registry.get     'content-length': '52',
+24 silly registry.get     'cache-control': 'must-revalidate' } ]
+25 silly lockFile c1dd5758-readline readline@
+26 error 404 'readline' is not in the npm registry.
+26 error 404 You should bug the author to publish it
+26 error 404
+26 error 404 Note that you can also install from a
+26 error 404 tarball, folder, or http url, or git url.
+27 error System Windows_NT 6.2.9200
+28 error command "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "readline"
+29 error cwd c:\Users\Richard\source\requirejs-demo\example5
+30 error node -v v0.8.8
+31 error npm -v 1.1.59
+32 error code E404
+33 verbose exit [ 1, true ]
