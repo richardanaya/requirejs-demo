@@ -18,7 +18,7 @@ define(function () {
     };
 
     Observer.prototype.fire = function () {
-        for(var i = 0 ; i < this.fns.length; i++){
+        for (var i = 0; i < this.fns.length; i++) {
             this.fns[i].apply(null, arguments);
         }
     }

@@ -5,12 +5,12 @@ define(function () {
         this.view.requestCalculation.subscribe(this.onProcessCalculation.bind(this));
     };
 
-    Calculator.prototype.initialize = function(){
+    Calculator.prototype.initialize = function () {
         this.view.initialize();
     };
 
     Calculator.prototype.onProcessCalculation = function (calcString) {
-        var calcRegex = /([\d\.]+)([\+\*\/\-])([\d\.]+)/;
+        var calcRegex = /([\d\.]+)([\+\-\/\*])([\d\.]+)/;
         var matches = calcRegex.exec(calcString);
         var operandA = parseFloat(matches[1]);
         var op = matches[2];
@@ -19,19 +19,21 @@ define(function () {
         var result = 'Error';
         try {
             if (op == '*') {
-                result = this.model.multiply(operandA,operandB);
+                result = this.model.multiply(operandA, operandB);
             }
             if (op == '+') {
-                result = this.model.add(operandA,operandB);
+                result = this.model.add(operandA, operandB);
             }
             if (op == '/') {
-                result = this.model.divide(operandA,operandB);
+                result = this.model.divide(operandA, operandB);
             }
-            if (op == '+') {
-                result = this.model.add(operandA,operandB);
-          }
+            if (op == '-') {
+                result = this.model.subtract(operandA, operandB);
+            }
         }
-        catch(e){};
+        catch (e) {
+        }
+
         this.view.displayResult(result);
     };
 

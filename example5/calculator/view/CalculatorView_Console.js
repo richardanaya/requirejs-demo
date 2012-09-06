@@ -21,7 +21,9 @@ define('calculator/view/CalculatorView',
         };
 
         ConsoleCalculatorView.prototype.onInput = function (line) {
-            this.requestCalculation.fire(line);
+            if (line && line.length > 1) {
+                this.requestCalculation.fire(line);
+            }
             this.ask();
         };
 
